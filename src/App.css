@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  padding: 200px;
+  padding: 150px;
 }
 
 form {
@@ -14,7 +14,7 @@ form {
   justify-content: center;
   text-align: right;
   height: 100px;
-  width: 245px;
+  width: 247px;
   border: none;
   font-size: 25px;
   border-top-right-radius: 5px;
@@ -56,8 +56,15 @@ form {
   border: none;
   padding: 14px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 100%;
+  font-weight: 500;
   cursor: pointer;
+}
+
+.buttons__inline button:active {
+  background-color: #48abe0;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
 }
 
 .button {

@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
 
-//icons
-import BackspaceIcon from '@mui/icons-material/Backspace';
-
 function App() {
 
   const [count, setCount] = useState('');
@@ -36,8 +33,8 @@ function App() {
         </div>
         <div className='center__down'>
           <div className='buttons__inline'>
-            <button onClick={handleClear}>CE</button>
-            <BackspaceIcon className='button' onClick={handleDelete} />
+            <button onClick={handleClear} style={{background: 'yellow'}}>CE</button>
+            <button onClick={handleDelete}>&lt;</button>
             <button onClick={() => handleClick('%')}>÷</button>
             <button onClick={() => handleClick('/')}>/</button>
           </div>
@@ -63,7 +60,7 @@ function App() {
             <button onClick={() => handleClick('0')}>0</button>
             <button onClick={() => handleClick('00')}>00</button>
             <button onClick={() => handleClick('.')}>.</button>
-            <button onClick={handleEvaluate}>=</button>
+            <button onClick={handleEvaluate} style={{background: 'rgb(211, 61, 211)'}}>=</button>
           </div>
         </div>
       </div>
